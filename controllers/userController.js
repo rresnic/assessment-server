@@ -1,5 +1,5 @@
 const userModel = require('../models/userModel.js'); 
-
+const jwt = require('jsonwebtoken');
 const regex = {
     fullName: /^[^'"`;`]+$/,  // Prevent SQL injection characters like ', ", ;, `
     username: /^[a-zA-Z]+$/,  // Only letters for the username
